@@ -1,0 +1,20 @@
+{
+  "name": "aula-04-fake-timers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --injectGlobals false test/",
+    "test:dev": "NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --injectGlobals false --watchAll test/",
+    "test:debug": "node --experimental-vm-modules --inspect-brk node_modules/.bin/jest --runInBand --injectGlobals false --watchAll test/"
+  },
+  "author": "michaelpereira408@gmail.com",
+  "license": "ISC",
+  "description": "",
+  "engines": {
+    "node": "v18.20.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
